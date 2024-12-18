@@ -8,6 +8,9 @@ Assuming that input files are in the same directory as solver.py, run the progra
 ## Problem formulation
 The variables are defined as the grids on the board where each one is filled with a number. The completion state is when all of the variables have been assigned a number from 1 to 9, and all the regular sudoku row, column, and box constraints, as well as the dot constraints have been met. This is a discrete variable CSP problem where the domain is finite. The domain was determined to be {1, 2, 3, 4, 5, 6, 7, 8, 9}, as those are the values allowed in a sudoku puzzle. The constraints are that variables in the same row cannot have the same value, variables in the same column cannot have the same value, variables in the same box cannot have the same value, variables with white dots have to be within 1 of its neighbor, and variables with black dots have to be half or twice as much as the neighbor. 
 
+## Extra credit
+Forward checking inference was implemented in this code for extra credit (in the forward_check() function). 
+
 
 ## Source code
 ```
